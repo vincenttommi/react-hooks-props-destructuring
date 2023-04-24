@@ -2,12 +2,12 @@ import React from "react";
 
 //child compoment
 
-function MovieCard(props) {
+function MovieCard({title,posterSrc,genres}) {
   return (
     <div className="movie-card">
-      <img src={props.posterSrc} alt={props.title} />
-      <h2>{props.title}</h2>
-      <small>{props.genres.join(", ")}</small>
+      <img src={posterSrc} alt={title} />
+      <h2>{title}</h2>
+      <small>{genres.join(", ")}</small>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-
+//parent component
 function App() {
   const title = "Mad Max";
   const posterURL =
@@ -8,10 +8,13 @@ function App() {
   const genresArr = ["Action", "Adventure", "Science Fiction", "Thriller"];
 
   return (
+    //child component
     <div className="App">
-      <MovieCard title={title} genres={genresArr} />
+      <MovieCard title={title} posterSrc={posterURL} genres={genresArr} />
     </div>
   );
 }
+
+
 
 export default App;
